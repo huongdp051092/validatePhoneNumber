@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validate Phone Number</title>
+</head>
+<body>
+    <script>
+        function isPhoneNumber(str) {
+            let regexp = /^\([0-9]{2}\)\-\(0[0-9]{9}\)$/;
+            return regexp.test(str);
+        }
+
+        console.log(isPhoneNumber("(84)-(0978489648)"));
+        console.log(isPhoneNumber("(a8)-(22222222)"));
+    </script>
+</body>
+</html>
